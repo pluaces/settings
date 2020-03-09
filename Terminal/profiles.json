@@ -1,0 +1,183 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{1f8890b7-29b1-4cde-8b5c-8d60da5d7953}",
+    "showTerminalTitleInTitlebar": true,
+    "initialCols": 150,
+    "initialRows": 40,
+    "profiles":
+    {
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles
+        },
+        "list":
+        [
+            {
+                "guid": "{1f8890b7-29b1-4cde-8b5c-8d60da5d7953}",
+                "name": "Powerline",
+                "commandline": "powershell.exe",
+                "hidden": false,
+                "fontFace": "Cascadia Code PL",
+                "cursorShape": "vintage",
+                "fontSize": 10,
+                "startingDirectory": "C:/src",
+                "icon": "ms-appdata:///roaming/windows.png",
+                "backgroundImage": "ms-appdata:///roaming/windows-bg.png",
+                "backgroundImageStretchMode": "none",
+                "backgroundImageOpacity": 0.5,
+                "backgroundImageAlignment": "bottomRight",
+                "colorScheme": "Windows Soft",
+                "useAcrylic": true,
+                "acrylicOpacity": 0.85,
+                "padding": "2"
+            },
+            {
+                "guid": "{9ec1207c-0381-4d4b-b750-11ba1c0e5ea3}",
+                "name": "HuB Dev",
+                "commandline": "powershell.exe",
+                "hidden": false,
+                "fontFace": "Cascadia Code PL",
+                "cursorShape": "vintage",
+                "fontSize": 10,
+                "background": "#22598d",
+                "startingDirectory": "C:\\src\\Admin",
+                "icon": "ms-appdata:///roaming/hub-icon-blue.png",
+                "backgroundImage": "ms-appdata:///roaming/hub-bg.png",
+                "backgroundImageStretchMode": "none",
+                "backgroundImageOpacity": 0.5,
+                "backgroundImageAlignment": "bottomRight",
+                "colorScheme": "Windows Soft",
+                "useAcrylic": true,
+                "acrylicOpacity": 0.85,
+                "padding": "2"
+            },
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "Ubuntu",
+            "foreground": "#EEEEEC",
+            "background": "#2C001E",
+            "colors": [
+                "#EEEEEC",
+                "#16C60C",
+                "#729FCF",
+                "#B58900",
+                "#268BD2",
+                "#D33682",
+                "#2AA198",
+                "#EEE8D5",
+                "#002B36",
+                "#CB4B16",
+                "#586E75",
+                "#657B83",
+                "#839496",
+                "#6C71C4",
+                "#93A1A1",
+                "#FDF6E3"
+            ]
+        },
+        {
+            "name": "VS Code",
+            "background": "#21252b",
+            "foreground": "#d4d7d9",
+            "black": "#21252b",
+            "blue": "#61afef",
+            "brightBlack": "#5f6672",
+            "brightBlue": "#007fff",
+            "brightCyan": "#08e8de",
+            "brightGreen": "#66ff00",
+            "brightRed": "#FE6D4B",
+            "brightWhite": "#FFF",
+            "brightYellow": "#FFCF47",
+            "cyan": "#48C0EB",
+            "green": "#9FD661",
+            "red": "#e06c75",
+            "white": "#a9b2c3",
+            "yellow": "#d19a66",
+            "purple": "#FFFFFF",
+            "brightPurple": "#FFF",
+            "selectionBackground": "#9FD661"
+          },
+          {
+            "name": "Windows Soft",
+            "background": "#21252b",
+            "foreground": "#d4d7d9",
+            "black": "#21252b",
+            "blue": "#61afef",
+            "brightBlack": "#5f6672",
+            "brightBlue": "#007fff",
+            "brightCyan": "#08e8de",
+            "brightGreen": "#66ff00",
+            "brightRed": "#d74e42",
+            "brightWhite": "#FFF",
+            "brightYellow": "#e5c07b",
+            "cyan": "#56b6c2",
+            "green": "#98c379",
+            "red": "#e06c75",
+            "white": "#a9b2c3",
+            "yellow": "#d19a66",
+            "purple": "#FFFFFF",
+            "brightPurple": "#FFF",
+            "selectionBackground": "#98c379"
+          },
+          {
+            "name": "HuB Dev",
+            "background": "#668cc5",
+            "foreground": "#d4d7d9",
+            "black": "#21252b",
+            "blue": "#61afef",
+            "brightBlack": "#5f6672",
+            "brightBlue": "#007fff",
+            "brightCyan": "#08e8de",
+            "brightGreen": "#66ff00",
+            "brightRed": "#FF0000",
+            "brightWhite": "#FFF",
+            "brightYellow": "#e5c07b",
+            "cyan": "#56b6c2",
+            "green": "#98c379",
+            "red": "#FF0000",
+            "white": "#a9b2c3",
+            "yellow": "#d19a66",
+            "purple": "#FFFFFF",
+            "brightPurple": "#FFF",
+            "selectionBackground": "#98c379"
+          }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+        { "command": "copy", "keys": ["ctrl+shift+c"] },
+        { "command": "paste", "keys": ["ctrl+shift+v"] },
+        { "command": "splitHorizontal", "keys": [ "alt+shift+h" ] },
+        { "command": "splitVertical", "keys": [ "alt+shift+v" ] }
+    ]
+}
