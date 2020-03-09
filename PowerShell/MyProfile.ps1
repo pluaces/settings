@@ -1,4 +1,6 @@
-﻿$userdir = join-path $Env:userprofile "Documents\WindowsPowerShell\"
+﻿# Paste your profile under
+# C:\Users\piglesias\Documents\WindowsPowerShell
+$userdir = join-path $Env:userprofile "Documents\WindowsPowerShell\"
 . (Join-Path $userdir 'profile.ps1')
 
 Import-Module 'C:\tools\poshgit\posh-git-0.7.1\src\posh-git.psd1'
