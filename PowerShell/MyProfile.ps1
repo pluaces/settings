@@ -1,6 +1,4 @@
-﻿# Paste your profile under
-# C:\Users\piglesias\Documents\WindowsPowerShell
-$userdir = join-path $Env:userprofile "Documents\WindowsPowerShell\"
+﻿$userdir = join-path $Env:userprofile "Documents\WindowsPowerShell\"
 . (Join-Path $userdir 'profile.ps1')
 
 Import-Module 'C:\tools\poshgit\posh-git-0.7.1\src\posh-git.psd1'
@@ -15,7 +13,7 @@ Import-Module 'C:\src\Admin\tools\HubDevCli.psm1'
 # oh-my-posh requires powerline fonts https://github.com/powerline/fonts
 Import-Module oh-my-posh
 # Favourinte themes Sorin, Paradox
-Set-Theme Sorin
+Set-Theme Paradox
 
 
 function Hub {
@@ -60,4 +58,10 @@ function Start-AzureEmulators {
 function ReStart-AzureEmulators {
             Stop-AzureEmulators
             Start-AzureEmulators
+}
+
+function Open-RiskManagementServiceBus {
+    explorer "C:\src\cdh\data\sb\topics\riskmanagement\coredevhub"
+    explorer "C:\src\cdh\data\sb\topics\riskmanagement\riskmanagementservice"
+    explorer "C:\src\cdh\data\sb\topics\riskmanagement\corewhqhub"
 }

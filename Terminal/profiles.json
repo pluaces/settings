@@ -55,6 +55,24 @@
                 "padding": "2"
             },
             {
+                "guid": "{7e1d2853-2e35-4a95-9e3b-415437ef0dde}",
+                "name": "HuB Database Dev",
+                "commandline": "powershell.exe",
+                "hidden": false,
+                "fontFace": "Cascadia Code PL",
+                "cursorShape": "vintage",
+                "fontSize": 10,
+                "background": "#420977",
+                "startingDirectory": "C:/src/Admin/Database",
+                "icon": "ms-appdata:///roaming/hub-icon-blue.png",
+                "backgroundImage": "ms-appdata:///roaming/database.png",
+                "backgroundImageStretchMode": "none",
+                "backgroundImageOpacity": 0.5,
+                "backgroundImageAlignment": "bottomRight",
+                "colorScheme": "HuB Dev",
+                "padding": "2"
+            },
+            {
                 // Make changes here to the powershell.exe profile
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
@@ -164,8 +182,8 @@
             "red": "#e06c75",
             "white": "#a9b2c3",
             "yellow": "#d19a66",
-            "purple": "#FFFFFF",
-            "brightPurple": "#FFF",
+            "purple": "#9f76ff",
+            "brightPurple": "#6523ff",
             "selectionBackground": "#98c379"
           }
     ],
